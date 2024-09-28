@@ -1,0 +1,1231 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 70rem;
+    /* width: 69.375rem; */
+    margin-inline: auto;
+}
+
+img{
+    width: 100%;
+}
+
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0. .1);
+    backdrop-filter: blur(30px);
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+.header:hover::after{
+    left: 100%;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0px;
+    text-wrap: nowrap;
+    margin-left: 10%;
+}
+
+.navbar{
+    margin-right: 18%;
+}
+
+.navbar a{
+    font-weight: 500;
+    font-size: 0.813rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.navbar a:hover{
+    color: #ed563b;
+}
+
+.navbar .btn-primary{
+    font-weight: 400;
+    color: white;
+    background-color: #ed563b;
+    text-decoration: none;
+    padding: 11px 17px;
+}
+
+.navbar .btn-primary:hover{
+    background-color: #f36951;
+    color: #e7e5e5;
+}
+
+
+#check{
+    display: none;
+}
+
+.icons{
+    display: none;
+    position: absolute;
+    font-size: 2.8rem;
+    right: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* hero */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(35, 45, 57, .7), rgba(35, 45, 57, .7));
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 5%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.text-hero{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .text-hero h6{
+    font-weight: 800;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-top: 20%;
+    margin-left: 40%;
+    color: #fff;
+   line-height: 21.6px;
+   
+}
+
+.hero .text-hero h2{
+    font-weight: 800;
+    font-size: 5.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-hero .hero-btn button{
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #ed563b;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    text-size-adjust: 100%;
+    text-align: center;
+    transform: all .3s;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+.hero-btn button:hover{
+    background-color: #f36951;
+}
+
+/* choose program */
+.choose-program .container{
+    margin-bottom: 5rem;
+}
+
+.choose-program .title h2{
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: #232d39;
+    margin-top: 20%;
+    margin-bottom: 0px;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.choose-program .title img{
+    width: 45px;
+    margin: 15px;
+    margin-left: 48%;
+}
+
+.choose-program .title p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 27%;
+    font-size: 0.875rem;
+    line-height: 1.563rem;
+    color: #7a7a7a;
+    text-align: center;
+}
+
+/* dumbells */
+.program{
+    margin-top: 8%;
+    margin-bottom: 20%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+.program .grid .fitness{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: row; */
+}
+ 
+.fitness img{
+    float: left;
+    margin-right: 30px;
+    width: 120px;
+    height: 120px;
+} 
+
+.fitness .text h4{
+    font-weight: 600;
+    font-size: 1.188rem;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    letter-spacing: 0.016rem;
+    color: #232d39;
+}
+
+.fitness .text p{
+    font-size: 0.875rem;
+    font-weight: 350;
+    line-height: 1.563rem;
+    color: #7a7a7a;
+    text-wrap: wrap;
+}
+
+.fitness .text a{
+    text-decoration: none;
+    color: #ed563b;
+    margin-top: 20px ;
+    line-height: 1.563rem;
+}
+
+/* Section-3 Become a member */
+.back-img{
+    height: 45vh;
+    background-image:url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+
+.back-img .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    gap: 1rem;
+} 
+
+.back-img .container h2{
+    font-weight: 800;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 13%;
+}
+
+.back-img .container p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.back-img .container .member-button a{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.938rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.member-button a:hover {
+    background-color: #f36951 !important;
+}
+
+/* Section-4 choose classes */
+.choose-classes .title h2{
+    font-weight: 800;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+    color: rgb(35, 45, 57);
+    margin-top: 10%;
+    margin-bottom: 0px;
+    text-align: center;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.choose-classes .title img{
+    width: 45px;
+    margin: 15px;
+    margin-left: 48%;
+    margin-top: 2%;
+}
+
+.choose-classes .title p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.563rem;;
+    color: rgb(122, 122, 122);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/*our-classes */
+.classes{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.classes .card ul{
+    margin-top: 0px;
+   
+}
+/* grid cards */
+.classes .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6%;
+}
+
+/* span card image listiga */
+.classes .grid .card-image{
+    grid-column: 2 / span 3;
+}
+
+/* card lists */
+.classes .grid .card ul .cards li{
+    width: 21.875rem;
+    height: 5.938rem;
+    margin-bottom: 1.875rem;
+    box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.classes .grid .card ul .cards li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.classes .grid .card ul .cards li a{
+    font-weight: 600;
+    font-size: large;
+    color: #ed563b;
+    margin-top: 10%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.classes .grid .card ul .cards li a img{
+    margin-right: 20px;
+    max-width: 30px;
+}
+
+.classes .grid .card ul .card-button a{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.188rem;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    background-color: #ed563b;
+    color: white;
+    margin-right: 40px;
+    margin-left: 10px;
+    padding: 30px;
+    width: 97.5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.classes .grid .card ul .card-button a:hover{
+    background-color: #f36951;
+
+}
+
+
+/* card-image */
+.classes .grid .card-image img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.classes .grid .card-image .card-title h4{
+    font-weight: 700;
+    font-size: 1.438rem;
+    color: #232d39;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.031;
+}
+
+.classes .grid .card-image .card-title p{
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    margin-top: 1.875rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.031;
+    line-height: 1.563rem;
+}
+
+.classes .grid .card-image .view-button a{
+    display: inline-block;
+    background-color: #ed563b;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.938rem;
+    padding: 0.75rem 1.25rem;
+    transition: 0.3s; 
+    text-decoration: none;  
+}
+
+.classes .grid .card-image .view-button a:hover{
+    background-color: #f36951 !important;
+}    
+
+/* Section-5 schedule table */
+.schedule-image{
+    width: 117.875rem;
+    height: 57.724rem;
+    height: auto;
+    background-image:url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 8.75rem ;
+    margin-bottom: 10%;
+}
+
+/* table it self */
+.schedule-image .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    gap: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.schedule-image .container h2{
+    font-weight: 800;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 15%;
+    margin-bottom: 0px;
+}
+
+.schedule-image .container img{
+    width: 2.813rem;
+    height: 0.938rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-image .container p{
+    display: block;
+    font-size: 0.875rem;
+    color: #fff;
+    /* line-height: 1.563rem; */
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.schedule-image .container .days{
+    margin-bottom: 2.5rem;
+}
+
+.schedule-image .container .days ul li{
+    font-weight: 500;
+    font-size: 0.938rem;
+    display: inline;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 50%;
+}
+
+.schedule-image .container .days ul li::after{
+    content: "/";
+    margin-left: 10px;
+    color: #fff;
+}
+
+.schedule-image .container .days ul li:hover{
+    color: #ed563b;
+    cursor: pointer;
+}
+
+/* table */
+.schedule-image .container .table-list{
+    width: 57.5rem;
+    height: 31.313rem;
+    text-align: center;
+}
+
+.schedule-image .container .table-list table{
+    width: 100%;
+    height: 31.25rem;
+    border-collapse: collapse;
+    padding-bottom: 8.75rem;  
+}
+
+.schedule-image .container .table-list table tbody tr td{
+    border: 2px solid #fff;
+    height: 100px;
+    font-weight: 500;
+    font-size: 0.813rem;
+    color: #fff;
+    letter-spacing: 0.25px;
+}
+
+/* section-6 */
+.expert-trainers .container .title h2{
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: #232d39;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;    
+}
+
+.expert-trainers .container .title img{
+    width: 45px;
+    margin: 15px;
+    margin-left: 48%;
+}
+
+.expert-trainers .container .title p{
+    width: 33.75rem;
+    height: 3.125rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    margin-left: 27%;
+    line-height: 1.563rem;
+    color: #7a7a7a;
+    text-align: center;
+}
+
+/* grid */
+.expert-trainers .container .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 71.25rem;
+    height: 32.757rem;
+    margin-right: -0.938rem;
+    margin-left: -0.938rem;
+}
+
+.expert-trainers .container .grid .trainee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;  
+    margin-top: 5%;
+}
+
+.expert-trainers .container .grid .trainee .cards{
+    width: 21.875rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 2.5rem;
+    /* margin-bottom: 10%; */
+}
+
+.expert-trainers .container .grid .trainee .cards .image-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.expert-trainers .container .grid .trainee .cards .card-content span{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 0.813rem;
+    color: #ed563b;
+    margin-top: 1.563rem;
+    margin-bottom: 0.625rem;
+}
+
+.expert-trainers .container .grid .trainee .cards .card-content h4{
+    font-weight: 600;
+    font-size: 1.188rem;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.125rem;
+}
+
+.expert-trainers .container .grid .trainee .cards .card-content p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.563rem;
+    color: #7a7a7a;
+}
+
+.expert-trainers .container .grid .trainee .cards .card-content .social-icons{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    list-style: none;
+    width: 0.857rem;
+    height: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons .fa-brands{
+    color: #000000;
+}
+
+/* map and input registration */
+.form{
+    width: 58.938rem;
+    height: 37.938rem;
+    margin-top: 15%;
+}
+
+.form .container .form-map{
+    display: flex;
+    width: 116rem;
+    height: 37.938rem;
+    margin-top: 8.75rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form .container .form-map .location{
+    flex: 1;
+}
+
+.form .container .form-map .registration{
+    flex: 1;
+    background-image: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 58.938rem;
+    height: 37.938rem;
+}
+
+.form-map .registration .input{
+    width: 43.938rem;
+    height: 22.531rem;
+    padding: 40px 40px;
+}
+
+.form-map .registration .input form{
+    width: 48.938rem;
+    height: 30rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.form-map .registration .input form input{
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(122, 122, 122);
+    border: 1px solid rgb(221, 221, 221);
+    padding-left: 10px;
+    width: 21.031rem;
+    height: 2.5rem;
+    margin-left: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form-map .registration .input form textarea{
+    /* display: inline-block; */
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(122, 122, 122);
+    border: 1px solid rgb(221, 221, 221);
+    width: 42.563rem;
+    height: 9.25rem;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.form .registration .input form .submit-button{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ed563b;
+    color: #fff;
+    width: 8rem;
+    height: 2.5rem; 
+    padding: 11px 17px;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+footer .container p{
+    font-weight: 400;
+    font-size: 0.813rem;
+    padding: 2rem;
+    width: 69.375rem;
+    height: 1.563rem;
+    text-align: center;
+}
+
+
+/* media query responsive */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    /* Section-0 Navigation */
+    .icons{
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .header{
+        position: sticky !important;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transition: .3s ease;
+        background-color: #f7f7f7;
+    }
+
+    #check:checked~.navbar{
+        height: 20.7rem;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 1.5rem 0;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+        color: #000000;
+    }  
+
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.10s * var(--i));
+        opacity: 1;
+    }
+
+    .navbar a:hover{
+        background-color: #e7e5e5;
+        color: #ed563b;
+        padding: 10px;
+    }
+    
+    .logo{
+        line-height: 5rem;
+        color: #fff;
+        font-weight: 800;
+        font-size: 2rem;
+        float: left;
+        width: 17.814rem;
+        height: 5rem;
+        margin-left: 10px;
+    }
+
+    .header{
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 5rem;
+        box-shadow: none;
+        text-align: center;
+        padding: 0px 15px;
+        left: 0px;
+        right: 0px;
+        z-index: 100;
+        transition: all .5s ease 0s;
+    }
+
+    .header .icons{
+        margin-top: 20px;
+        color: rgba(0, 0, 0, .6);
+    }
+     
+    /* Section-1 hero */
+    .hero{
+        height: 100vh;
+    }
+    
+    .back-video{
+        position: absolute;
+        z-index: -2;
+        max-width: 100%;
+        max-height: 100vh;
+        min-width: 100%;
+        min-height: 100vh;
+        object-fit: cover;
+    }
+    
+    .text-hero{
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 80px;
+    }
+
+    .hero .text-hero h6{
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    
+    .hero .text-hero h2{
+        font-size: 64px;
+    }
+
+    .hero .hero-btn button{
+        margin-left: 25%;
+        padding-right: 10px;
+        padding-left: 10px ;
+        text-align: center;
+    }
+     
+    /* Section-2 choose program */
+    .choose-program .container .title h2{
+        font-weight: 800;
+        font-size: 1.75rem;
+        color: #232d39;
+        margin-top: 13%;
+        margin-right: 62%;
+        margin-left: 0 !important;
+        word-spacing: 5px;
+    }
+
+    .choose-program .container .title img{
+        width: 45px;
+        margin-top: 2% !important;
+        margin-left: 17%;
+    }
+     
+    .choose-program .container .title p{
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 62%;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 14px;
+        text-size-adjust: 100%;
+    } 
+
+    /* dumbells */
+    .program{
+        margin-top: 8%;
+        margin-bottom: 25%;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3%;
+    }
+    
+    .program .grid .fitness{
+        display: flex;
+        justify-content: left;
+    }
+
+    .fitness img{
+        float: left;
+        margin-left: 30px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .fitness .text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .fitness .text h4{
+        /* font-weight: 600; */
+        font-size: 18px;
+        margin-bottom: 7px;
+        letter-spacing: 0.25px;
+        margin-top: 0px !important;
+    }
+
+    .fitness .text p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        margin-right: 68%;  
+    }
+
+    .fitness .text a{
+        font-weight: 500;
+        font-size: 13px;
+        display: inline-block;
+        margin-top: 7px;
+    }
+
+    /* Section-3 Become a member */
+    .back-img{
+        padding: 120px 0px;
+        background-image: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        height: 80vh;
+    } 
+
+    .back-img .container{
+        width: 100%;
+        height: 100%;
+        padding-right: 0.938rem;
+        padding-left: 0.938rem;
+    } 
+
+    .back-img .container h2{
+        font-weight: 800;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        line-height: 2.813rem;
+        text-align: center;
+    }
+
+    .back-img .container p{
+        font-size: 1rem;
+        line-height: 1.563rem;
+        text-align: center;
+    }
+
+    .back-img .container .member-button a{
+        font-weight: 400;
+        font-size: 0.938rem;
+    }
+
+    /* Section-4 Classes */
+    .choose-classes .title h2{
+        font-weight: 800;
+        font-size: 1.75rem;
+        margin-top: 13%;
+        margin-right: 62%;
+        margin-left: 0 !important;
+        word-spacing: 5px;
+    }
+
+    .choose-classes .title img{
+        width: 45px;
+        margin-top: 2% !important;
+        margin-left: 17%;
+    }
+
+    .choose-classes .title p{
+        font-size: 0.875rem;
+        line-height: 25px;
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 62%;
+        text-size-adjust: 100%;
+    }
+
+    /* our-classes */
+    .classes{
+        margin-top: 7%;
+        margin-bottom: 10%;
+        margin-left: 2%;
+    }
+
+    .classes .grid{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    /* Training-image*/
+    .classes .grid .card-image{
+        display: block;
+        width: 65%;
+        padding-right: 0.938rem;
+        padding-left: 0.938rem;
+        margin-top: 5%;
+    }
+
+    .classes .grid .card-image img{
+        width: 55%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .classes .grid .card-image .card-title h4{
+        font-size: 23px;
+        margin-bottom: 20px;
+        color: #232d39;
+        letter-spacing: 0.5px;
+    }
+
+    .classes .grid .card-image .card-title p{
+        font-size: 0.875rem;
+        margin-right: 45%;
+    }
+
+    .classes .grid .card-image .view-button a{
+        display: inline-block;
+        background-color: #ed563b;
+        color: #fff;
+        font-weight: 400;
+        font-size: 0.938rem;
+        padding: 0.75rem 1.25rem;
+        transition: 0.3s; 
+        text-decoration: none;  
+    }
+
+    /* Section-5 schedule table */
+    .schedule-image{
+        width: 100%;
+        background-image:url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg');
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .schedule-image .container{
+        width: 100%;
+    }
+
+    /* table */
+    .schedule-image .container .table-list table{
+        position: relative;
+        width:25.25rem;
+        text-align: center;
+        margin-left: 28%;
+    }
+  
+    /* section-6 */
+    .expert-trainers .container .title{
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .expert-trainers .container .title h2{
+        position: relative;
+        font-size: 28px;
+        font-weight: 800;
+        text-align: center;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .expert-trainers .container .title img{
+        position: absolute;
+        width: 2.812rem;
+        height: 0.937rem;
+        margin-top: 25%;
+    }
+
+    .expert-trainers .container .title p{
+        font-size: 0.875rem;
+        margin-top: 3%;
+        margin-left: 2%;
+        margin-right: 62%;
+    }
+
+    .expert-trainers .container .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.313rem;
+        margin-top:58%;
+        margin-bottom: 65%;
+        margin-left: 5%;
+    }
+
+    .expert-trainers .container .grid .trainee{
+        display: flex;
+        flex-direction: column;
+        width: 20.376rem;
+        height: 28.846rem;
+    }
+
+    /* Section-7 map and input registration */
+    .form{
+      margin-bottom: 50%;
+      height: 50%;
+    }
+
+    .form .container{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20%;
+    }
+
+    .form .container .form-map{
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 50%;
+    }
+
+    .form .container .form-map .location{
+        display: block;
+        margin-bottom: -7px;
+        width: 25rem;
+        height: 37.875rem;
+        margin-right: 0 !important;
+    }
+ 
+    .form .container .form-map .registration{
+        background-image: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg');
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25rem;
+        height: 35.625rem;
+        margin-top: 5px;
+      
+    }
+
+    .form .container .form-map .registration .input{
+        display: flex;
+        margin-bottom: 70%;
+        margin-left: 0 !important;
+        margin-right: 50%;
+        padding-left: 1px;
+    }
+
+    .form .container .form-map .registration .input form{
+        width: 350px;
+    }
+
+    .form .container .form-map .registration .input form input{
+        width: 80%;
+    }
+
+    .form .container .form-map .registration .input form textarea{
+        width: 80%;
+    }
+
+    .form .container .form-map .registration .input form .submit-button{
+        width: 40%;
+    }
+    
+    /* Section-8 footer */
+    footer .container p{
+      text-align: left;
+      margin-right: 100px !important;
+      padding-left: 5px;
+      display: block;
+      font-size: 0.75rem;
+    }
+} 
+    
